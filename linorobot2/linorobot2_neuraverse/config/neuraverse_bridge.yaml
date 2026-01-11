@@ -1,0 +1,15 @@
+neura_sync_bridge:
+  ros__parameters:
+    # Placeholder endpoint - update with actual Neuraverse/NEURA Sync endpoint
+    neuraverse_endpoint: "wss://api.neuraverse.com/v1/robot/connect" 
+    
+    # Robot identifier in the Neuraverse platform
+    robot_id: "linorobot2_001"
+    
+    # Topics to sync with the cloud platform
+    # Verify these topic names match what NEURA Sync expects
+    topics:
+      - "/cmd_vel"
+      - "/odom"
+      - "/scan"
+      - "/battery_state"
